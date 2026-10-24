@@ -24,7 +24,7 @@ Eğitim süresince elde edilen Training ve Validation (Kayıp ve Doğruluk) değ
 ![Loss ve Accuracy Grafikleri](grafikler.png)
 
 ## 4. Kendi El Yazım (Öğrenci Numarası) ile Model Testi ve Değerlendirme
-Modelim MNIST eğitim ve test verilerinde yüksek başarı (%97.36) göstermiş olsa da, kendi el yazımla hazırladığım okul numaramın rakamlarını modele test verisi olarak verdiğimde bazı hatalı tahminler gözlemledim.
+Modelime öğrenci numaramın (24120205018) el yazısı ile yazılmış halini yükledim. Modelim MNIST eğitim ve test verilerinde yüksek başarı (%97.36) göstermiş olsa da, kendi el yazımla hazırladığım okul numaramın rakamlarını modele test verisi olarak verdiğimde bazı hatalı tahminler gözlemledim.
 
 **Genel Değerlendirme (Distribution Shift & Generalization):**
 Bu hatanın temel sebebi, eğitim verisi ile gerçek dünya verisi arasındaki **dağılım kaymasıdır (distribution shift)**. Model sadece bilgisayar ortamındaki idealize edilmiş MNIST rakamlarını öğrenmiştir. Benim çektiğim fotoğraflardaki kalem kalınlığı, ışık, rakamın kağıttaki açısı ve konumu model için yeni bir gürültü (noise) yaratmıştır. 
