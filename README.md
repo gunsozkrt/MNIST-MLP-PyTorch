@@ -15,8 +15,8 @@ Bu proje kapsamında, PyTorch kullanılarak CNN (Evrişimli Sinir Ağı) mimaris
 * **Training Accuracy:** %98.38
 * **Validation Loss:** 0.0974
 * **Validation Accuracy:** %97.15
-* **Test Veri Seti Başarısı:** % [Buraya Test Accuracy sonucunu yaz]
-* **Toplam Eğitim Süresi:** [Buraya ekranda yazan saniyeyi yaz]
+* **Test Veri Seti Başarısı:** %97.36
+* **Toplam Eğitim Süresi:** 170.03 saniye
 
 ## 3. Loss ve Accuracy Grafikleri
 Eğitim süresince elde edilen Training ve Validation (Kayıp ve Doğruluk) değerlerinin grafiği aşağıdadır:
@@ -24,7 +24,7 @@ Eğitim süresince elde edilen Training ve Validation (Kayıp ve Doğruluk) değ
 ![Loss ve Accuracy Grafikleri](grafikler.png)
 
 ## 4. Kendi El Yazım (Öğrenci Numarası) ile Model Testi ve Değerlendirme
-Modelim MNIST eğitim ve test verilerinde yüksek başarı göstermiş olsa da, kendi el yazımla hazırladığım okul numaramın rakamlarını modele test verisi olarak verdiğimde bazı hatalı tahminler gözlemledim (örneğin '2' rakamının '1' olarak tahmin edilmesi). 
+Modelim MNIST eğitim ve test verilerinde yüksek başarı (%97.36) göstermiş olsa da, kendi el yazımla hazırladığım okul numaramın rakamlarını modele test verisi olarak verdiğimde bazı hatalı tahminler gözlemledim.
 
 **Genel Değerlendirme (Distribution Shift & Generalization):**
 Bu hatanın temel sebebi, eğitim verisi ile gerçek dünya verisi arasındaki **dağılım kaymasıdır (distribution shift)**. Model sadece bilgisayar ortamındaki idealize edilmiş MNIST rakamlarını öğrenmiştir. Benim çektiğim fotoğraflardaki kalem kalınlığı, ışık, rakamın kağıttaki açısı ve konumu model için yeni bir gürültü (noise) yaratmıştır. 
